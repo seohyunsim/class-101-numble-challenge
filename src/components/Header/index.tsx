@@ -1,4 +1,4 @@
-import { Subtitle1, Input, SearchIcon } from "@class101/ui";
+import { Subtitle1, SearchIcon } from "@class101/ui";
 import {
   Wrap,
   HeaderWrap,
@@ -13,7 +13,7 @@ export const Header = () => {
     <Wrap>
       <HeaderWrap>
         <LogoWrap>
-          <Subtitle1>CLASS101</Subtitle1>
+          <h2>CLASS101</h2>
         </LogoWrap>
         <ClassStoreWrap>
           <Subtitle1 color="#FF5600">클래스</Subtitle1>

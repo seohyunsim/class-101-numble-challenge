@@ -15,6 +15,9 @@ export const HeaderWrap = styled.div`
   align-items: center;
   padding: 20px 0px;
   -webkit-box-align: center;
+  h2 {
+    margin: 0;
+  }
 `;
 
 export const LogoWrap = styled.div`
@@ -37,11 +40,11 @@ export const SearchWrap = styled(FormGroup)`
   input {
     font-size: 14px;
     font-weight: normal;
-    line-height: 20px;
+    line-height: 22px;
     letter-spacing: -0.15px;
     margin: 0px;
     width: 100%;
-    padding: 12px 52px 12px 16px;
+    padding: 12px 52px 10px 16px;
     background: rgb(248, 248, 249);
     border: 1px solid rgb(248, 248, 249);
     box-sizing: border-box;
