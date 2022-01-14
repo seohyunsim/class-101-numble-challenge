@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FormGroup } from "@class101/ui";
+import { Subtitle1, FormGroup } from "@class101/ui";
 
 export const Wrap = styled.div`
   box-sizing: border-box;
@@ -15,19 +15,27 @@ export const HeaderWrap = styled.div`
   align-items: center;
   padding: 20px 0px;
   -webkit-box-align: center;
-  h2 {
-    margin: 0;
-  }
 `;
 
 export const LogoWrap = styled.div`
   margin-right: 28px;
+  h2 {
+    cursor: pointer;
+  }
 `;
 
 export const ClassStoreWrap = styled.div`
   display: flex;
   gap: 16px;
   margin-right: 36px;
+`;
+
+export const TopmenuRoute = styled.a`
+  text-decoration-line: none;
+  text-decoration: none;
+`;
+export const Topmenu = styled(Subtitle1)`
+  cursor: pointer;
 `;
 
 export const SearchWrap = styled(FormGroup)`

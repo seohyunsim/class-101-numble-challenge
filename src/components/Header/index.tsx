@@ -1,23 +1,32 @@
-import { Subtitle1, SearchIcon } from "@class101/ui";
+import { SearchIcon } from "@class101/ui";
 import {
   Wrap,
   HeaderWrap,
   LogoWrap,
   ClassStoreWrap,
+  TopmenuRoute,
+  Topmenu,
   SearchWrap,
   UserWrap,
 } from "../Header/styles";
 
 export const Header = () => {
+  const toGoGithub = () => {
+    return (window.location.href =
+      "https://github.com/seohyunsim/class-101-numble-challenge");
+  };
+
   return (
     <Wrap>
       <HeaderWrap>
         <LogoWrap>
-          <h2>CLASS101</h2>
+          <h2 onClick={toGoGithub}>CLASS101</h2>
         </LogoWrap>
         <ClassStoreWrap>
-          <Subtitle1 color="#FF5600">클래스</Subtitle1>
-          <Subtitle1>스토어</Subtitle1>
+          <TopmenuRoute href="https://github.com/seohyunsim/class-101-numble-challenge">
+            <Topmenu color="#FF5600">클래스</Topmenu>
+          </TopmenuRoute>
+          <Topmenu>스토어</Topmenu>
         </ClassStoreWrap>
         <SearchWrap label="" inline>
           <form>
@@ -26,9 +35,9 @@ export const Header = () => {
           </form>
         </SearchWrap>
         <UserWrap>
-          <p>크리에이터 지원</p>
-          <p>기업교육</p>
-          <p>로그인</p>
+          <p onClick={toGoGithub}>크리에이터 지원</p>
+          <p onClick={toGoGithub}>기업교육</p>
+          <p onClick={toGoGithub}>로그인</p>
         </UserWrap>
       </HeaderWrap>
     </Wrap>

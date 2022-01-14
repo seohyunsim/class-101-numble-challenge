@@ -8,26 +8,31 @@ import {
 } from "../Navigation/styles";
 
 export const Navigation = () => {
+  const toGoGithub = () => {
+    return (window.location.href =
+      "https://github.com/seohyunsim/class-101-numble-challenge");
+  };
+
   return (
     <Wrap>
       <MajorNavWrap>
-        <li>
+        <li onClick={toGoGithub}>
           전체 카테고리 <Icon.DropDown size={24} />
         </li>
-        <li>
+        <li onClick={toGoGithub}>
           1월 가입혜택
           <NewBadge />
         </li>
-        <li>이벤트</li>
-        <li>바로 수강</li>
-        <li>신규 클래스</li>
-        <li>오픈 예정</li>
+        <li onClick={toGoGithub}>이벤트</li>
+        <li onClick={toGoGithub}>바로 수강</li>
+        <li onClick={toGoGithub}>신규 클래스</li>
+        <li onClick={toGoGithub}>오픈 예정</li>
       </MajorNavWrap>
       <NavSpacing />
       <ServeNavWrap>
-        <li>시그니처</li>
-        <li>키즈</li>
-        <li>원포인트 클래스</li>
+        <li onClick={toGoGithub}>시그니처</li>
+        <li onClick={toGoGithub}>키즈</li>
+        <li onClick={toGoGithub}>원포인트 클래스</li>
       </ServeNavWrap>
     </Wrap>
   );
